@@ -182,6 +182,10 @@ function displayResult(){
 const reStart = document.querySelector("#restart")
 reStart.onclick = function (){
   location.reload();
+  
+  
+  
+  
 }
 
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캐릭터 mbti</title>
+  <link href="styles.css" rel="stylesheet">
+  <style>
+     #r_name{
+      text-align: center;
+      font-size: 15px;
+    }
+    .user-name{
+      font-size: 20px;
+      
+    }
+    #ch{
+      font-size: 25px;
+
+    }
+    #img{
+      margin: auto;
+      width: min-content;
+    }
+    #ppp{
+      width: 300px;
+    }
+    
+    #l_image{
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .loading{
+      text-align: center;
+      width: 200px;
+/*      border-bottom: 5px solid brown; */
+      
+/*      animation: load 1s 0s linear infinite alternate-reverse;*/
+    }
+    
+    @keyframes load{
+      50%{ 
+        width: 300px; 
+      }
+    }
+    
+  </style>
+</head>
+<body>
+   
+  <div id="container">
+    <div id="home">
+    
+   <img src="image/거인.png" width="300" height="150" align="center">
+
+     <h1 style="text-align:center">
+       진격의 거인 <br> MBTI  
+     </h1>
+     
+     <div class="field">
+     <input id="name" autocomplete="off" placeholder="이름" type="text" maxlength="5"></div>
+     
+     <div class="field">
+       <button id="start">시작하기</button>
+     </div>
+    </div>
+    
+    
+    
+    <div id="quiz">
+    
+    <h1 id="number"></h1>
+    
+    <img src="image/로고.png">
+    
+    <div id="question">
+      <h2 id="question__h2"></h2>
+    </div>
+    
+    <div id="answer">
+      <button class="answer__btn" id="answer__a1"></button><br>
+      <button class="answer__btn" id="answer__a2"></button>
+    </div>
+     
+      
+    </div>
+    
+    <div id="loading">
+      <img id="l_image" src="image/Spinner.gif">
+      <h1 class="loading">결과 준비중...</h1>
+    </div>
+    
+    <div id="result">
+      <div id="img">
+        <img id="ppp">
+      </div>
+      <div id="r_name">
+      <p><span class="user-name"></span>의 캐릭터는
+      <span id="ch" class="name_c"></span></p>
+      </div>
+      <div id="ex"></div>
+      <button id="restart">다시하기</button>
+    </div>
+    
+    
+  </div>
+  <script src="questions.js"></script>
+  <script src="results.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

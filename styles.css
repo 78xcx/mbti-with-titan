@@ -1,0 +1,133 @@
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  font-family: '국립박물관문화재단클래식B';
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.field {
+    width: 250px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+#start{
+  outline: none;
+}
+
+#name{display: inline-block;
+  outline: none;
+  color: 
+  
+}
+
+.field input{
+  box-sizing: border-box;
+  width: 90%;
+  height:40px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  text-align: center;
+/*
+  display: block;
+  margin: 0 auto;
+*/
+}
+
+.field button {
+    width: 100%;
+    height: 45px;
+    color: white;
+    border: none;
+    background-color: brown;
+    font-size: 20px;
+}
+
+#container{
+  width: 375px;
+  margin: auto;
+  height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 여기부터 퀴즈 */
+#quiz{
+  text-align: center;
+}
+
+#quiz > img {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+
+#number{
+  height: 50px;
+}
+
+#question{
+  height: 80px;
+}
+#question__h2{
+  
+  text-align: center;
+  margin: 0 20px;
+}
+#answer {
+  margin: 0 20px;
+  height: 200px;
+}
+#ex{
+  margin: 0 20px;
+  margin-top: 30px;
+  text-align: center;
+  min-height: 200px;
+}
+.answer__btn{
+  width:100%;
+  height:50px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px auto;
+  font-size: 15px;
+}
+#restart{
+  display: block;
+  
+  background-color: brown;
+  border: none;
+  width: 50%;
+  height: 45px;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  text-align: center;
+  margin: 20px auto;
+  
+}
+
+/* 의사 클래스 */
+.answer__btn:active, .answer__btn:focus{
+  outline: none;
+}
+
+/* id=#, class=. */
+
+#quiz, #result, #loading{
+  display: none;
+}
